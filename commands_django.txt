@@ -1,0 +1,74 @@
+startproject.
+ Создаёт новый проект Django с указанным именем.
+ Пример: python manage.py startproject MyDjangoProject.
+
+startapp.
+ Создаёт новое приложение Django внутри проекта с указанным именем.
+ Пример: python manage.py startapp MyNewApp.
+
+runserver.
+Запускает веб-сервер для разработки, позволяя локально запускать проект Django для тестирования и разработки.
+Пример: python manage.py runserver.
+
+createsuperuser.
+Создаёт новую учётную запись суперпользователя для доступа к интерфейсу администратора Django.
+Пример: python manage.py createsuperuser.
+
+makemigrations.
+Генерирует файлы миграций базы данных на основе изменений в моделях.
+Пример: python manage.py makemigrations.
+
+migrate.
+Применяет миграции базы данных, обновляя схему базы данных в соответствии с изменениями в моделях.
+Пример: python manage.py migrate.
+
+inspectdb.
+Автогенерирует модели Django, исследуя устаревшую базу данных, что полезно при интеграции Django в проект с уже существующей базой данных.
+Пример: python manage.py inspectdb.
+
+collectstatic.
+Собирает статические файлы из приложений Django в одно место для развёртывания.
+Пример: python manage.py collectstatic.
+
+test.
+Запускает тесты для проекта Django, включая любые тесты, написанные с использованием тестовой среды Django.
+Пример: python manage.py test.
+
+showmigrations.
+Выводит список всех миграций и их статус (применённые или неприменённые).
+Пример: python manage.py showmigrations.
+
+dumpdata.
+Создаёт JSON или YAML-представление данных в базе данных (бэкапы).
+Пример: python manage.py dumpdata.
+
+loaddata.
+Загружает данные из файла фикстур в базу данных. Пример: python manage.py
+loaddata INPUT_FILE.
+
+sqlflush.
+Генерирует SQL для удаления всех данных из базы данных (полезно для сброса базы данных во время разработки).
+Пример: python manage.py sqlflush.
+
+check.
+Проверяет наличие проблем в проекте Django, таких как синтаксические ошибки, потенциальные проблемы и готовность к развёртыванию.
+Пример: python manage.py check.
+
+sendtestemail.
+Тестирует доставку электронной почты с помощью адреса, указанного в настройках, проверяя правильность конфигурации проекта.
+Пример: python manage.py sendtestemail.
+
+changepassword.
+Позволяет обновить пароль для пользователя через CLI.
+Пример: python manage.py changepassword <username>.
+
+diffsettings.
+Выводит различия между текущим файлом настроек и настройками Django по умолчанию.
+
+shell_plus.
+Открывает улучшенную оболочку Python с дополнительными функциями, предоставленными сторонними пакетами, такими как IPython и расширениями Django.
+Пример: python manage.py shell_plus.
+
+runscript.
+Выполняет скрипт на Python в контексте проекта Django.
+ Пример: python manage.py runscript.
