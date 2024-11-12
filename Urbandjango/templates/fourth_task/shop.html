@@ -1,0 +1,17 @@
+{% extends "menu.html" %}
+
+
+{% block pagename %}
+    <h1>{{ title }}</h1>
+{% endblock %}
+
+{% block menu %}
+    {{ block.super }}
+{% endblock %}
+
+{% block content %}
+    {% for i in goods %}
+        <p>{{ i }}<button>Подробнее</button></p>
+    {% endfor %}
+    <button onclick="window.history.back()">Обратно</button>
+{% endblock %}

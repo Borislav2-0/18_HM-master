@@ -18,13 +18,13 @@ from django.contrib import admin
 from django.urls import path
 
 from task2.views import function_request, RequestClass
-from task3.views import *
+from task4.views import main_page, basket_page, shop_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('func_temp/', function_request),
     path('class_temp/', RequestClass.as_view()),
-    path('', main_page),
+    path('main_page/', main_page),
     path('basket_page/', basket_page),
     path('shop_page/', shop_page),
 
