@@ -24,6 +24,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('func_temp/', function_request),
     path('class_temp/', RequestClass.as_view()),
-    path('', include("task4.urls"))
-
+    # path('', include("task4.urls")),
+    path('', include("task5.urls"))
 ]
